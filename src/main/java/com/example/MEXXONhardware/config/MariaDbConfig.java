@@ -14,7 +14,7 @@ public class MariaDbConfig {
     public DataSource mariaDbDataSource() {
         HikariDataSource dataSource = new HikariDataSource();
         dataSource.setJdbcUrl("jdbc:mariadb://localhost:3307/hardware_mariadb_db");
-        dataSource.setUsername("admin");
+        dataSource.setUsername("root");
         dataSource.setPassword("admin");
         return dataSource;
     }
